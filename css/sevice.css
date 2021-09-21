@@ -8,3 +8,48 @@ body{
     width: 80%;
     height: 100%;
 }
+
+.prices-heading{
+    margin-top: 1rem;
+}
+
+.price-items{
+    display: inline;
+}
+
+.table-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-table{
+    width: 30rem;
+}
+
+.price-table ul{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+ul li{
+    padding-bottom: 0.2rem;
+}
+
+.price-subheading{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    letter-spacing: 0.1rem;
+    border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 1024px){
+    .price-table{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
