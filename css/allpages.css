@@ -5,7 +5,7 @@ nav{
     width: 100%;
     margin-left: 10%;
     padding: 1.5rem 0;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid rgb(88, 88, 88);
     z-index: 100;
 }
 
@@ -43,7 +43,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-radius: 0px 0px 0.7rem 0.7rem;
+    border-radius: 0px 0px 4rem 4rem;
     animation: fadein 1s;
 }
 
@@ -54,9 +54,9 @@ a:hover{
 .hero h1{
     background-color: rgba(253, 253, 253, 0.418);
     padding: 1rem;
-    display: inline;
+    margin-left: 1rem;
     width: fit-content;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 }
 
 .content{
@@ -86,12 +86,19 @@ footer{
     align-items: center;
     justify-content: center;
     position: absolute;
+    margin-top: 2rem;
+    border-top: 2px solid rgb(80, 80, 80);
+    background-color: rgba(240, 240, 240, 0.65);
 }
 
 .icons{
+    padding: 1rem;
     display: flex;
     flex-direction: row;
+}
 
+.icons img{
+    max-width: 5rem;
 }
 
 
@@ -120,9 +127,7 @@ footer{
     .hero{
         width: 100%;
         margin: 0;
-
         padding: 0.5rem;
-        
     }
     
     
@@ -147,6 +152,19 @@ footer{
         width: 100%;
        
     }
+
+    .content{
+        margin: 0;
+    }
+
+    }
+
+    @media screen and (max-width: 330px){
+        .content{
+            font-size: 1rem;
+        }
+
+
     }
 
 

@@ -15,18 +15,7 @@ body{
 
 /* hero */
 .hero{
-    position: relative;
-    background-image: url(../images/pexels-photo-7256846.png);
-    background-position: left;
-    background-size: cover;
-    width: 100%;
-    height: fit-content;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;    
-    animation: fadein 1s;
 }
 @keyframes fadein {
     from { opacity: 0;}
@@ -41,7 +30,7 @@ body{
     margin: 3rem;
     color: rgb(0, 0, 0);
     background-color: rgba(253, 253, 253, 0.418);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
