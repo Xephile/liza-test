@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+body{
+    width: 80%;
+    height: 100%;
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-left: 10%;
+    padding: 1.5rem 0;
+    border-bottom: 3px solid black;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(88, 88, 88);
+    text-decoration: underline;
+}
+
+.resinLogo a{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 300;
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+/* hero */
+.hero{
+    position: relative;
+    background-image: url(../images/pexels-photo-7256846.png);
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro{
+    width: 50%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin: 3rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(253, 253, 253, 0.418);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro p{
+    line-height: 2rem;
+    text-align: center;
+}
+
+.intro img{
+    width: 13rem;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.intro h2{
+    padding: 1rem;
+}
+
+
+/* button */
+
+.btn{
+   padding: 1rem 3rem;
+   margin: 2rem;
+   border: 2px solid rgb(24, 24, 24);
+   color: rgb(27, 27, 27);
+   font-size: 1.2rem;
+   letter-spacing: 0.2rem;
+   font-family: 'Questrial', sans-serif;
+   transition: 0.2s ease-in-out;
+   
+}
+
+.btn:hover{
+    letter-spacing: 0.4rem;
+    border-radius: 1rem;
+    box-shadow: 0px 20px 16px -7px rgba(0,0,0,0.71);
+    color: black;
+    text-decoration: none;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .resinLogo{
+        display: inline-block;
+    }
+
+    .hideResin{
+        display: none;
+    }
+
+    .intro{
+        width: 80%;
+    }
+
+    nav{
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .intro{
+        width: 90%;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-height: 720px){
+    .intro{
+       margin: 0.7rem;
+    }
+}

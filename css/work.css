@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+body{
+    width: 80%;
+    height: 100%;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-left: 10%;
+    padding: 1.5rem 0;
+    border-bottom: 3px solid black;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(88, 88, 88);
+    text-decoration: underline;
+}
+
+.resinLogo a{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 300;
+    font-size: 5rem;
+    text-decoration: none;
+}
