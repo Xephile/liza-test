@@ -86,6 +86,8 @@ body{
     text-decoration: none;
 }
 
+
+
 /* responsiveness */
 
 @media screen and (max-width: 1024px) {
@@ -122,12 +124,41 @@ body{
     .intro{
         width: 90%;
         overflow: unset;
+        font-size: 1.3rem;
+    }
+    .intro img{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 330px){
+    .intro{
+        width: 90%;
+        overflow: unset;
+        font-size: 1rem;
+    }
+    .intro img{
+        width: 8rem;
+        height: auto;
     }
 
+    .btn{
+        padding: 0;
+    }
 }
+
+
+
+
 
 @media screen and (max-height: 720px){
     .intro{
        margin: 0.7rem;
+    }
+
+    .portrait{
+        width: 1rem;
     }
 }

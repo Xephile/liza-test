@@ -1,0 +1,153 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-left: 10%;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid black;
+    z-index: 100;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(88, 88, 88);
+    text-decoration: underline;
+}
+
+.resinLogo a{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 300;
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+    background-image: url(../images/pexels-photo-7256846.png);
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0px 0px 0.7rem 0.7rem;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+  }
+.hero h1{
+    background-color: rgba(253, 253, 253, 0.418);
+    padding: 1rem;
+    display: inline;
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.content{
+    width: 100%;
+    height: fit-content;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0px 0px 0.7rem 0.7rem;
+    font-size: 1.3rem;
+    animation: fadein 1s;
+}
+
+.content h3{
+    margin-bottom: 1rem;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .resinLogo{
+        display: inline-block;
+    }
+
+    .hideResin{
+        display: none;
+    }
+
+    .hero{
+        padding: 0.7rem;
+    }
+
+    .hero h1{
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        width: 100%;
+        margin: 0;
+
+        padding: 0.5rem;
+        
+    }
+    
+    
+    .hero h1{
+        font-size: 1.3rem;
+        border-radius: 0.4rem;
+        margin-left: 1rem;
+    }
+    
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0rem;
+        margin: 0;
+    }
+    
+    nav h3{
+        padding: 0.4rem;
+    }
+    
+    body{
+        width: 100%;
+       
+    }
+    }
+
+
+
