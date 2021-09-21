@@ -32,3 +32,39 @@ a:hover{
     text-decoration: none;
 }
 
+/* responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .resinLogo{
+        display: inline-block;
+    }
+
+    .hideResin{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    nav h3{
+        padding: 0.5rem;
+    }
+
+    body{
+        width: 100%;
+       
+    }
+    .hero{
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+
