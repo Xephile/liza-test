@@ -2,11 +2,16 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    margin-left: 10%;
+    width: 80%;
     padding: 1.5rem 0;
     border-bottom: 3px solid rgb(88, 88, 88);
     z-index: 100;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h3{
@@ -34,12 +39,12 @@ a:hover{
 
 .hero{
     position: relative;
-    background-image: url(../images/pexels-photo-7256846.png);
+    background-image: url(../images/hero.png);
     background-position: left;
     background-size: cover;
-    width: 100%;
+    width: 80%;
     height: fit-content;
-    margin-left: 10%;
+
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -60,9 +65,9 @@ a:hover{
 }
 
 .content{
-    width: 100%;
+    width: 80%;
     height: fit-content;
-    margin-left: 10%;
+   
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -85,7 +90,6 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
     margin-top: 2rem;
     border-top: 2px solid rgb(80, 80, 80);
     background-color: rgba(240, 240, 240, 0.65);
@@ -128,6 +132,7 @@ footer{
         width: 100%;
         margin: 0;
         padding: 0.5rem;
+        border-radius: 0;
     }
     
     
@@ -142,16 +147,13 @@ footer{
         justify-content: flex-start;
         padding: 0rem;
         margin: 0;
+        width: 100%;
     }
     
     nav h3{
         padding: 0.4rem;
     }
     
-    body{
-        width: 100%;
-       
-    }
 
     .content{
         margin: 0;
