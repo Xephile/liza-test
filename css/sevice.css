@@ -62,3 +62,9 @@ ul li{
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .content{
+        width: 90%;
+    }
+}
