@@ -103,14 +103,14 @@
 
 .img-design{
     width: 90%;
-    height: fit-content;
+    height: 70%;
     background-color: rgb(233, 233, 233);
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 25%;
+    top: 18%;
     left: 5%;
     z-index: 101;
     box-shadow: 9px 9px 10px 6px rgba(0, 0, 0, 0.294)
