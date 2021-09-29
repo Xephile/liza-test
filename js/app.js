@@ -8,7 +8,7 @@ const trays = document.getElementById("trays-option");
 const all = document.getElementById("all");
 
 
-const products = document.getElementsByClassName("img-container");
+const products = document.querySelectorAll(".img-container");
 
 const coasterProducts = document.getElementsByClassName("coaster");
 const cakestandProducts = document.querySelectorAll(".cakestand");
@@ -17,8 +17,42 @@ const petProducts = document.querySelectorAll(".pet");
 const flowerProducts = document.querySelectorAll(".flower");
 const traysProducts = document.querySelectorAll(".trays");
 
+const bigImg = document.querySelector(".big-img");
+const bigImgContainer = document.querySelector(".big-img-container")
+const item = document.querySelectorAll(".product");
+
+// event listener for enlarging
 
 
+item.forEach(element => {
+    element.addEventListener("click", (e) => {
+        const createImg = document.createElement("img");
+
+        bigImgContainer.id = "show-img"
+
+        bigImgContainer.addEventListener("click", () => {
+            bigImg.id = ""
+            bigImg.removeChild(bigImg.lastElementChild)
+            bigImg.classList.remove("img-design")
+            bigImgContainer.id = ""
+
+        })
+
+
+        createImg.src = element.src;
+        bigImg.append(createImg);
+        if (bigImg.lastElementChild !== null) {
+            bigImg.id = "show-img"
+            bigImg.classList.add("img-design")
+        } else {
+            bigImg.id = ""
+        }
+    })
+
+
+})
+
+// event listener for selecting products
 
 all.addEventListener("click", () => {
     for (let i = 0; i < products.length; i++) {

@@ -71,6 +71,10 @@ a:hover{
     margin-left: 1rem;
     width: fit-content;
     border-radius: 0.6rem;
+    text-shadow: -0.5px 0.5px 0 #000,
+                          0.5px 0.5px 0 #000,
+                         0.5px -0.5px 0 #000,
+                        -0.5px -0.5px 0 #000;
 }
 
 .content{
