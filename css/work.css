@@ -21,7 +21,7 @@
 }
 
 .options li:hover{
-    color: rgb(88, 88, 88);
+    color: rgb(204, 58, 82);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -75,6 +75,7 @@
 
 .img-container h4{
     border-top: 1px solid rgb(102, 102, 102);
+    color: rgb(204, 58, 82);
     padding: 0.5rem;
     width: 100%;
 }

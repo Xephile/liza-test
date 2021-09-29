@@ -66,6 +66,7 @@ a:hover{
   }
 .hero h1{
     background-color: rgba(253, 253, 253, 0.418);
+    color: rgb(204, 58, 82);
     padding: 1rem;
     margin-left: 1rem;
     width: fit-content;
