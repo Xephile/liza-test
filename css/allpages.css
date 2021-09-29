@@ -3,7 +3,7 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    padding: 1.5rem 0;
+    padding: 1rem;
     border-bottom: 3px solid rgb(88, 88, 88);
     z-index: 100;
 }
@@ -14,10 +14,20 @@ body{
     flex-direction: column;
 }
 
-h3{
-    font-size: 1.5rem;
+nav h3{
+    font-size: 1.6rem;
     text-decoration: none;
     font-weight: 500;
+}
+
+nav img{
+    width: 25rem;
+    height: auto;
+}
+
+.responsiveLogo{
+    position: absolute;
+    visibility: hidden;
 }
 
 a{
@@ -26,7 +36,7 @@ a{
 }
 
 a:hover{
-    color: rgb(88, 88, 88);
+    color: rgb(204, 58, 82);
     text-decoration: underline;
 }
 
@@ -38,13 +48,11 @@ a:hover{
 }
 
 .hero{
-    position: relative;
     background-image: url(../images/hero.png);
     background-position: left;
     background-size: cover;
     width: 80%;
     height: fit-content;
-
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -108,14 +116,18 @@ footer{
 
 /* responsiveness */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1060px) {
     .resinLogo{
-        display: inline-block;
-    }
-
-    .hideResin{
         display: none;
     }
+
+    .responsiveLogo{
+       position: relative;
+        visibility: visible;
+        width: 20rem;
+        height: auto;
+    }
+
 
     .hero{
         padding: 0.7rem;
@@ -143,8 +155,7 @@ footer{
     }
     
     nav{
-        flex-direction: column;
-        justify-content: flex-start;
+    
         padding: 0rem;
         margin: 0;
         width: 100%;
@@ -162,6 +173,17 @@ footer{
 
     }
 
+    @media screen and (max-width: 470px){
+        nav h3{
+            font-size: 1rem;
+        }
+
+        .responsiveLogo{
+            width: 15rem;
+            height: auto;
+        }
+    }
+
 
     
 
@@ -170,6 +192,9 @@ footer{
             font-size: 1rem;
         }
 
+        nav h3{
+            font-size: 0.7rem;
+        }
 
     }
 

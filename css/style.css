@@ -13,10 +13,6 @@
 .hero{
     align-items: center;    
 }
-@keyframes fadein {
-    from { opacity: 0;}
-    to   { opacity: 1;}
-  }
 
 .intro{
     width: 50%;
@@ -63,6 +59,10 @@
    
 }
 
+.btn h2{
+    color: rgb(204, 58, 82);
+}
+
 .btn:hover{
     letter-spacing: 0.4rem;
     border-radius: 1rem;
@@ -76,21 +76,11 @@
 /* responsiveness */
 
 @media screen and (max-width: 1024px) {
-    .resinLogo{
-        display: inline-block;
-    }
-
-    .hideResin{
-        display: none;
-    }
-
     .intro{
         width: 80%;
     }
 
-    nav{
-        padding: 3rem;
-    }
+   
 }
 
 @media screen and (max-width: 768px){
