@@ -7,12 +7,14 @@ nav{
     border-bottom: 3px solid rgb(88, 88, 88);
     z-index: 100;
 }
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 
 nav h3{
     font-size: 1.6rem;
@@ -118,6 +120,13 @@ footer{
     max-width: 5rem;
 }
 
+
+/* thank you page */
+.thankyou{
+    margin-top: 5rem;
+    width: 50%;
+    text-align: center;
+}
 
 /* responsiveness */
 

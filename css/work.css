@@ -64,6 +64,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin: 1rem;
+    transition: 0.2s ease;
 
 }
 .img-container img{
@@ -73,7 +74,9 @@
     height: auto;
     margin-bottom: 0.5rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
+
 
 .img-container h4{
     border-top: 1px solid rgb(102, 102, 102);
