@@ -20,6 +20,11 @@ nav h3{
     font-size: 1.6rem;
     text-decoration: none;
     font-weight: 500;
+    transition: 0.2s ease;
+}
+
+nav h3:hover{
+    transform: scale(1.1);
 }
 
 nav img{
@@ -35,11 +40,13 @@ nav img{
 a{
     text-decoration: none;
     color: black;
+    transition: 0.1s ease;
 }
 
 a:hover{
     color: rgb(204, 58, 82);
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .resinLogo a{
@@ -136,11 +143,19 @@ footer{
     border: none;
     background-color: rgb(233, 190, 199);
     color: rgba(0, 0, 0, 0.856);
+    transition: 0.1s ease;
 }
 
 .home:hover{
     color: rgb(204, 58, 82);
+    transform: scale(1.1);
 }
+
+.home:active{
+    transform: scale(0.9);
+}
+
+
 
 /* responsiveness */
 
@@ -197,6 +212,10 @@ footer{
     .content{
         margin: 0;
         width: 100%;
+    }
+
+    .thankyou{
+        width: 90%;
     }
 
     }

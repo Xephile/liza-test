@@ -22,6 +22,9 @@
     width: 30%;
     height: 1.5rem;
     margin-right: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid black;
 }
 
 .message-div{
@@ -39,10 +42,30 @@
 
 .box:hover{
     border: 1px solid rgb(204, 58, 82) !important;
+    border-radius: 0.3rem;
 }
 
 .box:focus{
     outline: 1.5px solid rgb(204, 58, 82) !important;
+    border-radius: 0.3rem;
+}
+
+.send{
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: rgb(233, 190, 199);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.send:hover{
+    transform: scale(1.1)
+}
+
+.send:active{
+    transform: scale(0.9);
 }
 
 
@@ -71,6 +94,7 @@
     .box{
         width: 90%;
         margin: 0;
+
     }
 
     .message-div{
