@@ -5,13 +5,39 @@
     font-family: 'Questrial', sans-serif;
 }
 
-.email{
+.email-div{
     width: 80%;
     color: rgb(204, 58, 82);
     margin-top: 2rem;
     font-size: 1.3rem;
-    text-shadow: -0.2px 0.2px 0 #000,
-                          0.5px 0.5px 0 #000,
-                         0.5px -0.5px 0 #000,
-                        -0.5px -0.5px 0 #000;
+}
+
+.email-div h2{
+    margin-bottom: 1rem;
+}
+
+.box{
+    width: 30%;
+    height: 1.5rem;
+}
+
+.message-div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.message{
+    margin-top: 1rem;
+    width: 80%;
+    height: 10rem;
+}
+
+.box:hover{
+    border: 1px solid rgb(204, 58, 82) !important;
+}
+
+.box:focus{
+    outline: 1.5px solid rgb(204, 58, 82) !important;
 }

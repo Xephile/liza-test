@@ -30,16 +30,24 @@
 
 
 
-    <div class="email">
+    <div class="email-div">
         <h2>Enquiries:</h2>
 
         <form action="https://formsubmit.co/dean.munday@hotmail.co.uk" method="POST">
             <input type="hidden" name="_next" value="https://nostalgic-varahamihira-bb2382.netlify.app/thankyou.html">
 
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="text" name="name" placeholder="Message" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email Address" class="box email" required>
 
-            <button type="submit">Send</button>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Your Name" class="box name" required>
+
+            <div class="message-div">
+                <label for="message">Message:</label>
+                <textarea class="message box" name="message" placeholder="Message" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="send">Send</button>
         </form>
     </div>
 
